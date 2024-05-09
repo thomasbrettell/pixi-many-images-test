@@ -21,8 +21,16 @@ export const initSketch = async (mountEl) => {
 
   console.log(sheet);
 
-  const textures = Object.keys(sheet.textures);
-  console.log(textures.length);
+  const textures = {
+    ...sheet.textures,
+    ...sheet.linkedSheets.reduce((acc, sheet) => {
+      return {
+        ...acc,
+        ...sheet.textures,
+      };
+    }, {}),
+  };
+  const textureKeys = Object.keys(textures);
 
   const sprites = new Container();
 
@@ -31,17 +39,18 @@ export const initSketch = async (mountEl) => {
   // Create an array to store all the sprites
   const maggots = [];
 
-  const totalSprites = textures.length;
+  const totalSprites = textureKeys.length;
 
   for (let i = 0; i < totalSprites; i++) {
+    const texture = textures[textureKeys[i]];
     // Create a new maggot Sprite
-    const dude = new Sprite(sheet.textures[textures[i]]);
+    const dude = new Sprite(texture);
 
     // Set the anchor point so the texture is centerd on the sprite
     dude.anchor.set(0.5);
 
     // Different maggots, different sizes
-    dude.scale.set(0.3);
+    dude.scale.set(0.15);
 
     // Scatter them all
     dude.x = Math.random() * app.screen.width;
