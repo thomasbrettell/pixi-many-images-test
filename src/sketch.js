@@ -1,14 +1,11 @@
-import {
-  Application,
-  Assets,
-  Container,
-  Sprite,
-  Rectangle,
-  Spritesheet,
-  Texture,
-} from "pixi.js";
+import { Application, Assets, Container, Sprite, Rectangle } from "pixi.js";
+import Stats from "stats.js";
 
 export const initSketch = async (mountEl) => {
+  const stats = new Stats();
+  stats.showPanel(0); // 0: fps, 1: ms, 2: mb, 3+: custom
+  document.body.appendChild(stats.dom);
+
   // Create a PixiJS application.
   const app = new Application();
 
@@ -95,6 +92,8 @@ export const initSketch = async (mountEl) => {
   let tick = 0;
 
   app.ticker.add(() => {
+    stats.begin();
+
     // Iterate through the sprites and update their position
     for (let i = 0; i < maggots.length; i++) {
       const dude = maggots[i];
@@ -106,6 +105,8 @@ export const initSketch = async (mountEl) => {
 
     // Increment the ticker
     tick += 0.1;
+
+    stats.end();
   });
 };
 
