@@ -13,7 +13,15 @@ export const initSketch = async (mountEl) => {
   const app = new Application();
 
   // Intialize the application.
-  await app.init({ background: "#1099bb", resizeTo: window });
+  await app.init({
+    background: "#1099bb",
+    resizeTo: window,
+    resolution: window.devicePixelRatio,
+    antialias: true,
+  });
+
+  app.canvas.style.width = `${window.innerWidth}px`;
+  app.canvas.style.height = `${window.innerHeight}px`;
 
   mountEl.appendChild(app.canvas);
 
