@@ -1,6 +1,14 @@
 // @ts-nocheck
 
-import { Application, Assets, Container, Sprite, Rectangle } from "pixi.js";
+import {
+  Application,
+  Assets,
+  Container,
+  Sprite,
+  Rectangle,
+  Spritesheet,
+  Texture,
+} from "pixi.js";
 
 const IMAGE_NAMES = [
   "adelaide-01-mask.png",
@@ -793,6 +801,18 @@ const IMAGE_NAMES = [
   "westcoast-49-mask.png",
 ];
 
+const IMAGE_SIZE = 544;
+const COLS = 29;
+const ROWS = 28;
+const IMAGE_AMOUNT = 788;
+
+function setup(loader, resources) {
+  // This function will run after the sprite sheet is loaded
+  const spriteSheet = resources.spritesheet.texture;
+  console.log(spriteSheet);
+  // createSprites(spriteSheet);
+}
+
 export const initSketch = async (mountEl) => {
   // Create a PixiJS application.
   const app = new Application();
@@ -802,10 +822,57 @@ export const initSketch = async (mountEl) => {
 
   mountEl.appendChild(app.canvas);
 
+  const sheet = await Assets.load("./composite-large.png");
+
+  console.log(sheet);
   const textures = [];
-  for (let i = 0; i < IMAGE_NAMES.length; i++) {
-    textures.push(await Assets.load(`./output/${IMAGE_NAMES[i]}`));
+
+  for (let i = 0; i < COLS * ROWS; i++) {
+    const x = IMAGE_SIZE * (i % COLS);
+    const y = IMAGE_SIZE * Math.floor(i / COLS);
+    const rectangle = new Rectangle(x, y, IMAGE_SIZE, IMAGE_SIZE);
+    const texture = new Texture({
+      source: sheet.baseTexture,
+      frame: rectangle,
+    });
+    textures.push({ texture });
   }
+
+  console.log(textures);
+
+  //   const frames = {};
+  //   IMAGE_NAMES.forEach((name, i) => {
+  //     frames[`mask-${i}`] = {
+  //       x: IMAGE_SIZE * (i % COLS),
+  //       y: IMAGE_SIZE * Math.floor(i / COLS),
+  //       width: 544,
+  //       height: 544,
+  //     };
+  //   });
+
+  //   const atlasData = {
+  //     frames,
+  //     meta: {
+  //       image: "./composite-large.png",
+  //       format: "RGBA8888",
+  //       size: { w: 15776, h: 15776 },
+  //       scale: 1,
+  //     },
+  //   };
+
+  //   const spritesheet = new Spritesheet(
+  //     Texture.from(atlasData.meta.image),
+  //     atlasData
+  //   );
+
+  //   await spritesheet.parse();
+
+  //   console.log(spritesheet);
+
+  //   const textures = [];
+  //   for (let i = 0; i < IMAGE_NAMES.length; i++) {
+  //     textures.push(await Assets.load(`./output/${IMAGE_NAMES[i]}`));
+  //   }
 
   const sprites = new Container();
 
