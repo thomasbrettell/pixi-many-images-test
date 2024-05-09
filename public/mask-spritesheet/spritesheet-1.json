@@ -1,0 +1,637 @@
+{"frames": {
+
+"adelaide-11-mask.png":
+{
+	"frame": {"x":948,"y":1,"w":232,"h":253},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":151,"y":43,"w":232,"h":253},
+	"sourceSize": {"w":544,"h":544}
+},
+"adelaide-14-mask.png":
+{
+	"frame": {"x":1835,"y":1633,"w":212,"h":222},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":164,"y":47,"w":212,"h":222},
+	"sourceSize": {"w":544,"h":544}
+},
+"adelaide-16-mask.png":
+{
+	"frame": {"x":478,"y":1588,"w":223,"h":255},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":151,"y":53,"w":223,"h":255},
+	"sourceSize": {"w":544,"h":544}
+},
+"adelaide-23-mask.png":
+{
+	"frame": {"x":485,"y":523,"w":186,"h":254},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":171,"y":23,"w":186,"h":254},
+	"sourceSize": {"w":544,"h":544}
+},
+"adelaide-27-mask.png":
+{
+	"frame": {"x":1609,"y":1,"w":224,"h":249},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":161,"y":40,"w":224,"h":249},
+	"sourceSize": {"w":544,"h":544}
+},
+"adelaide-35-mask.png":
+{
+	"frame": {"x":899,"y":1281,"w":235,"h":251},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":151,"y":39,"w":235,"h":251},
+	"sourceSize": {"w":544,"h":544}
+},
+"brisbane-09-mask.png":
+{
+	"frame": {"x":1136,"y":1735,"w":187,"h":120},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":181,"y":42,"w":187,"h":120},
+	"sourceSize": {"w":544,"h":544}
+},
+"brisbane-20-mask.png":
+{
+	"frame": {"x":1835,"y":1407,"w":224,"h":212},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":159,"y":37,"w":224,"h":212},
+	"sourceSize": {"w":544,"h":544}
+},
+"brisbane-22-mask.png":
+{
+	"frame": {"x":1602,"y":1400,"w":231,"h":240},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":151,"y":50,"w":231,"h":240},
+	"sourceSize": {"w":544,"h":544}
+},
+"bulldogs-16-mask.png":
+{
+	"frame": {"x":1402,"y":507,"w":209,"h":244},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":180,"y":38,"w":209,"h":244},
+	"sourceSize": {"w":544,"h":544}
+},
+"bulldogs-29-mask.png":
+{
+	"frame": {"x":703,"y":1586,"w":212,"h":254},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":162,"y":36,"w":212,"h":254},
+	"sourceSize": {"w":544,"h":544}
+},
+"bulldogs-39-mask.png":
+{
+	"frame": {"x":1192,"y":1857,"w":219,"h":190},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":169,"y":18,"w":219,"h":190},
+	"sourceSize": {"w":544,"h":544}
+},
+"carlton-04-mask.png":
+{
+	"frame": {"x":954,"y":1026,"w":206,"h":251},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":173,"y":52,"w":206,"h":251},
+	"sourceSize": {"w":544,"h":544}
+},
+"carlton-30-mask.png":
+{
+	"frame": {"x":1136,"y":1279,"w":227,"h":213},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":153,"y":29,"w":227,"h":213},
+	"sourceSize": {"w":544,"h":544}
+},
+"carlton-35-mask.png":
+{
+	"frame": {"x":891,"y":772,"w":252,"h":250},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":153,"y":66,"w":252,"h":250},
+	"sourceSize": {"w":544,"h":544}
+},
+"carlton-43-mask.png":
+{
+	"frame": {"x":234,"y":1339,"w":176,"h":257},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":188,"y":51,"w":176,"h":257},
+	"sourceSize": {"w":544,"h":544}
+},
+"collingwood-01-mask.png":
+{
+	"frame": {"x":1835,"y":1178,"w":212,"h":227},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":163,"y":48,"w":212,"h":227},
+	"sourceSize": {"w":544,"h":544}
+},
+"collingwood-06-mask.png":
+{
+	"frame": {"x":966,"y":1776,"w":156,"h":76},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":188,"y":71,"w":156,"h":76},
+	"sourceSize": {"w":544,"h":544}
+},
+"collingwood-12-mask.png":
+{
+	"frame": {"x":232,"y":274,"w":223,"h":266},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":152,"y":48,"w":223,"h":266},
+	"sourceSize": {"w":544,"h":544}
+},
+"collingwood-16-mask.png":
+{
+	"frame": {"x":1351,"y":1617,"w":238,"h":241},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":155,"y":60,"w":238,"h":241},
+	"sourceSize": {"w":544,"h":544}
+},
+"collingwood-26-mask.png":
+{
+	"frame": {"x":702,"y":772,"w":187,"h":253},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":179,"y":50,"w":187,"h":253},
+	"sourceSize": {"w":544,"h":544}
+},
+"collingwood-45-mask.png":
+{
+	"frame": {"x":1613,"y":945,"w":205,"h":220},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":176,"y":49,"w":205,"h":220},
+	"sourceSize": {"w":544,"h":544}
+},
+"essendon-23-mask.png":
+{
+	"frame": {"x":673,"y":517,"w":246,"h":253},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":148,"y":41,"w":246,"h":253},
+	"sourceSize": {"w":544,"h":544}
+},
+"essendon-34-mask.png":
+{
+	"frame": {"x":261,"y":1073,"w":206,"h":256},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":161,"y":52,"w":206,"h":256},
+	"sourceSize": {"w":544,"h":544}
+},
+"fremantle-02-mask.png":
+{
+	"frame": {"x":1580,"y":1869,"w":178,"h":141},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":182,"y":42,"w":178,"h":141},
+	"sourceSize": {"w":544,"h":544}
+},
+"fremantle-24-mask.png":
+{
+	"frame": {"x":1835,"y":1,"w":212,"h":240},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":170,"y":29,"w":212,"h":240},
+	"sourceSize": {"w":544,"h":544}
+},
+"fremantle-26-mask.png":
+{
+	"frame": {"x":1,"y":1076,"w":258,"h":261},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":150,"y":43,"w":258,"h":261},
+	"sourceSize": {"w":544,"h":544}
+},
+"fremantle-27-mask.png":
+{
+	"frame": {"x":1351,"y":1433,"w":249,"h":182},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":144,"y":9,"w":249,"h":182},
+	"sourceSize": {"w":544,"h":544}
+},
+"fremantle-30-mask.png":
+{
+	"frame": {"x":1613,"y":252,"w":220,"h":249},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":157,"y":40,"w":220,"h":249},
+	"sourceSize": {"w":544,"h":544}
+},
+"fremantle-34-mask.png":
+{
+	"frame": {"x":1,"y":1599,"w":227,"h":258},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":164,"y":39,"w":227,"h":258},
+	"sourceSize": {"w":544,"h":544}
+},
+"fremantle-46-mask.png":
+{
+	"frame": {"x":469,"y":1073,"w":231,"h":255},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":151,"y":49,"w":231,"h":255},
+	"sourceSize": {"w":544,"h":544}
+},
+"geelong-04-mask.png":
+{
+	"frame": {"x":1,"y":274,"w":229,"h":267},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":167,"y":40,"w":229,"h":267},
+	"sourceSize": {"w":544,"h":544}
+},
+"geelong-17-mask.png":
+{
+	"frame": {"x":1141,"y":256,"w":252,"h":245},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":136,"y":33,"w":252,"h":245},
+	"sourceSize": {"w":544,"h":544}
+},
+"geelong-32-mask.png":
+{
+	"frame": {"x":457,"y":1,"w":259,"h":239},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":145,"y":34,"w":259,"h":239},
+	"sourceSize": {"w":544,"h":544}
+},
+"geelong-38-mask.png":
+{
+	"frame": {"x":236,"y":811,"w":232,"h":260},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":160,"y":44,"w":232,"h":260},
+	"sourceSize": {"w":544,"h":544}
+},
+"geelong-44-mask.png":
+{
+	"frame": {"x":1351,"y":1216,"w":215,"h":249},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":169,"y":37,"w":215,"h":249},
+	"sourceSize": {"w":544,"h":544}
+},
+"geelong-46-mask.png":
+{
+	"frame": {"x":921,"y":511,"w":248,"h":252},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":149,"y":44,"w":248,"h":252},
+	"sourceSize": {"w":544,"h":544}
+},
+"goldcoast-15-mask.png":
+{
+	"frame": {"x":1835,"y":718,"w":212,"h":228},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":150,"y":43,"w":212,"h":228},
+	"sourceSize": {"w":544,"h":544}
+},
+"goldcoast-44-mask.png":
+{
+	"frame": {"x":1402,"y":753,"w":209,"h":237},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":165,"y":57,"w":209,"h":237},
+	"sourceSize": {"w":544,"h":544}
+},
+"gws-31-mask.png":
+{
+	"frame": {"x":1,"y":811,"w":233,"h":263},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":167,"y":46,"w":233,"h":263},
+	"sourceSize": {"w":544,"h":544}
+},
+"gws-37-mask.png":
+{
+	"frame": {"x":251,"y":1858,"w":189,"h":232},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":178,"y":35,"w":189,"h":232},
+	"sourceSize": {"w":544,"h":544}
+},
+"gws-40-mask.png":
+{
+	"frame": {"x":1136,"y":1508,"w":213,"h":225},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":160,"y":33,"w":213,"h":225},
+	"sourceSize": {"w":544,"h":544}
+},
+"hawthorn-03-mask.png":
+{
+	"frame": {"x":1,"y":543,"w":266,"h":264},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":145,"y":32,"w":266,"h":264},
+	"sourceSize": {"w":544,"h":544}
+},
+"hawthorn-12-mask.png":
+{
+	"frame": {"x":1594,"y":1642,"w":239,"h":225},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":160,"y":55,"w":239,"h":225},
+	"sourceSize": {"w":544,"h":544}
+},
+"hawthorn-14-mask.png":
+{
+	"frame": {"x":1,"y":1,"w":230,"h":271},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":158,"y":51,"w":230,"h":271},
+	"sourceSize": {"w":544,"h":544}
+},
+"hawthorn-31-mask.png":
+{
+	"frame": {"x":1,"y":1859,"w":188,"h":248},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":178,"y":47,"w":188,"h":248},
+	"sourceSize": {"w":544,"h":544}
+},
+"hawthorn-38-mask.png":
+{
+	"frame": {"x":230,"y":1599,"w":246,"h":257},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":160,"y":36,"w":246,"h":257},
+	"sourceSize": {"w":544,"h":544}
+},
+"hawthorn-43-mask.png":
+{
+	"frame": {"x":412,"y":1331,"w":243,"h":255},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":144,"y":41,"w":243,"h":255},
+	"sourceSize": {"w":544,"h":544}
+},
+"melbourne-06-mask.png":
+{
+	"frame": {"x":901,"y":256,"w":238,"h":253},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":153,"y":53,"w":238,"h":253},
+	"sourceSize": {"w":544,"h":544}
+},
+"melbourne-08-mask.png":
+{
+	"frame": {"x":1162,"y":1018,"w":187,"h":233},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":176,"y":44,"w":187,"h":233},
+	"sourceSize": {"w":544,"h":544}
+},
+"melbourne-09-mask.png":
+{
+	"frame": {"x":1143,"y":765,"w":206,"h":251},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":161,"y":64,"w":206,"h":251},
+	"sourceSize": {"w":544,"h":544}
+},
+"melbourne-16-mask.png":
+{
+	"frame": {"x":1723,"y":1869,"w":177,"h":110},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":173,"y":63,"w":177,"h":110},
+	"sourceSize": {"w":544,"h":544}
+},
+"melbourne-41-mask.png":
+{
+	"frame": {"x":1388,"y":255,"w":223,"h":250},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":157,"y":44,"w":223,"h":250},
+	"sourceSize": {"w":544,"h":544}
+},
+"melbourne-43-mask.png":
+{
+	"frame": {"x":267,"y":542,"w":260,"h":216},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":142,"y":37,"w":260,"h":216},
+	"sourceSize": {"w":544,"h":544}
+},
+"northmelbourne-06-mask.png":
+{
+	"frame": {"x":485,"y":1845,"w":202,"h":231},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":176,"y":40,"w":202,"h":231},
+	"sourceSize": {"w":544,"h":544}
+},
+"northmelbourne-35-mask.png":
+{
+	"frame": {"x":1171,"y":510,"w":250,"h":229},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":142,"y":33,"w":250,"h":229},
+	"sourceSize": {"w":544,"h":544}
+},
+"portadelaide-13-mask.png":
+{
+	"frame": {"x":1390,"y":1,"w":217,"h":250},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":169,"y":36,"w":217,"h":250},
+	"sourceSize": {"w":544,"h":544}
+},
+"portadelaide-18-mask.png":
+{
+	"frame": {"x":1613,"y":503,"w":220,"h":231},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":159,"y":38,"w":220,"h":231},
+	"sourceSize": {"w":544,"h":544}
+},
+"portadelaide-30-mask.png":
+{
+	"frame": {"x":457,"y":262,"w":191,"h":259},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":162,"y":50,"w":191,"h":259},
+	"sourceSize": {"w":544,"h":544}
+},
+"portadelaide-38-mask.png":
+{
+	"frame": {"x":1835,"y":1857,"w":190,"h":203},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":176,"y":54,"w":190,"h":203},
+	"sourceSize": {"w":544,"h":544}
+},
+"stkilda-31-mask.png":
+{
+	"frame": {"x":1182,"y":1,"w":206,"h":252},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":170,"y":47,"w":206,"h":252},
+	"sourceSize": {"w":544,"h":544}
+},
+"sydney-05-mask.png":
+{
+	"frame": {"x":1613,"y":736,"w":220,"h":207},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":159,"y":35,"w":220,"h":207},
+	"sourceSize": {"w":544,"h":544}
+},
+"sydney-08-mask.png":
+{
+	"frame": {"x":698,"y":1,"w":253,"h":248},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":138,"y":38,"w":253,"h":248},
+	"sourceSize": {"w":544,"h":544}
+},
+"sydney-17-mask.png":
+{
+	"frame": {"x":470,"y":804,"w":230,"h":255},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":157,"y":26,"w":230,"h":255},
+	"sourceSize": {"w":544,"h":544}
+},
+"sydney-19-mask.png":
+{
+	"frame": {"x":702,"y":1027,"w":250,"h":252},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":152,"y":48,"w":250,"h":252},
+	"sourceSize": {"w":544,"h":544}
+},
+"sydney-22-mask.png":
+{
+	"frame": {"x":1351,"y":992,"w":222,"h":249},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":151,"y":54,"w":222,"h":249},
+	"sourceSize": {"w":544,"h":544}
+},
+"sydney-25-mask.png":
+{
+	"frame": {"x":917,"y":1534,"w":217,"h":240},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":159,"y":46,"w":217,"h":240},
+	"sourceSize": {"w":544,"h":544}
+},
+"sydney-32-mask.png":
+{
+	"frame": {"x":233,"y":1,"w":264,"h":222},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":144,"y":46,"w":264,"h":222},
+	"sourceSize": {"w":544,"h":544}
+},
+"sydney-38-mask.png":
+{
+	"frame": {"x":650,"y":262,"w":253,"h":249},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":144,"y":54,"w":253,"h":249},
+	"sourceSize": {"w":544,"h":544}
+},
+"sydney-44-mask.png":
+{
+	"frame": {"x":1413,"y":1857,"w":190,"h":165},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":177,"y":28,"w":190,"h":165},
+	"sourceSize": {"w":544,"h":544}
+},
+"westcoast-13-mask.png":
+{
+	"frame": {"x":657,"y":1330,"w":240,"h":254},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":143,"y":30,"w":240,"h":254},
+	"sourceSize": {"w":544,"h":544}
+},
+"westcoast-18-mask.png":
+{
+	"frame": {"x":966,"y":1857,"w":190,"h":224},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":177,"y":48,"w":190,"h":224},
+	"sourceSize": {"w":544,"h":544}
+},
+"westcoast-19-mask.png":
+{
+	"frame": {"x":718,"y":1842,"w":205,"h":246},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":172,"y":34,"w":205,"h":246},
+	"sourceSize": {"w":544,"h":544}
+},
+"westcoast-22-mask.png":
+{
+	"frame": {"x":1835,"y":948,"w":212,"h":228},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":165,"y":45,"w":212,"h":228},
+	"sourceSize": {"w":544,"h":544}
+},
+"westcoast-29-mask.png":
+{
+	"frame": {"x":1835,"y":243,"w":238,"h":212},
+	"rotated": true,
+	"trimmed": true,
+	"spriteSourceSize": {"x":158,"y":48,"w":238,"h":212},
+	"sourceSize": {"w":544,"h":544}
+},
+"westcoast-36-mask.png":
+{
+	"frame": {"x":1,"y":1339,"w":231,"h":258},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":144,"y":27,"w":231,"h":258},
+	"sourceSize": {"w":544,"h":544}
+},
+"westcoast-37-mask.png":
+{
+	"frame": {"x":1835,"y":483,"w":212,"h":233},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":168,"y":35,"w":212,"h":233},
+	"sourceSize": {"w":544,"h":544}
+},
+"westcoast-49-mask.png":
+{
+	"frame": {"x":1602,"y":1152,"w":231,"h":246},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":165,"y":46,"w":231,"h":246},
+	"sourceSize": {"w":544,"h":544}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.1",
+	"image": "spritesheet-1.png",
+	"format": "RGBA8888",
+	"size": {"w":2048,"h":2048},
+	"scale": "1",
+	"related_multi_packs": [ "spritesheet-0.json", "spritesheet-2.json", "spritesheet-3.json", "spritesheet-4.json", "spritesheet-5.json", "spritesheet-6.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:e48cf5426fa4f120ed51eea3496f33f6:864e27fcd5a174eeb0290669e27f9a9c:28a4acfa7b4de317eee39f9b385339f6$"
+}
+}

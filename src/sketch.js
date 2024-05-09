@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import {
   Application,
   Assets,
@@ -9,6 +7,92 @@ import {
   Spritesheet,
   Texture,
 } from "pixi.js";
+
+export const initSketch = async (mountEl) => {
+  // Create a PixiJS application.
+  const app = new Application();
+
+  // Intialize the application.
+  await app.init({ background: "#1099bb", resizeTo: window });
+
+  mountEl.appendChild(app.canvas);
+
+  const sheet = await Assets.load("./mask-spritesheet/spritesheet-0.json");
+
+  console.log(sheet);
+
+  const textures = Object.keys(sheet.textures);
+  console.log(textures.length);
+
+  const sprites = new Container();
+
+  app.stage.addChild(sprites);
+
+  // Create an array to store all the sprites
+  const maggots = [];
+
+  const totalSprites = textures.length;
+
+  for (let i = 0; i < totalSprites; i++) {
+    // Create a new maggot Sprite
+    const dude = new Sprite(sheet.textures[textures[i]]);
+
+    // Set the anchor point so the texture is centerd on the sprite
+    dude.anchor.set(0.5);
+
+    // Different maggots, different sizes
+    dude.scale.set(0.3);
+
+    // Scatter them all
+    dude.x = Math.random() * app.screen.width;
+    dude.y = Math.random() * app.screen.height;
+
+    dude.tint = Math.random() * 0x808080;
+
+    // Create a random direction in radians
+    dude.direction = Math.random() * Math.PI * 2;
+
+    // This number will be used to modify the direction of the sprite over time
+    dude.turningSpeed = Math.random() - 0.8;
+
+    // Create a random speed between 0 - 2, and these maggots are slooww
+    dude.speed = (2 + Math.random() * 2) * 0.2;
+
+    dude.offset = Math.random() * 100;
+
+    // Finally we push the dude into the maggots array so it it can be easily accessed later
+    maggots.push(dude);
+
+    sprites.addChild(dude);
+  }
+
+  // Create a bounding box box for the little maggots
+  const dudeBoundsPadding = 100;
+  const dudeBounds = new Rectangle(
+    -dudeBoundsPadding,
+    -dudeBoundsPadding,
+    app.screen.width + dudeBoundsPadding * 2,
+    app.screen.height + dudeBoundsPadding * 2
+  );
+
+  let tick = 0;
+
+  app.ticker.add(() => {
+    // Iterate through the sprites and update their position
+    for (let i = 0; i < maggots.length; i++) {
+      const dude = maggots[i];
+
+      dude.direction += dude.turningSpeed * 0.01;
+      dude.x += Math.sin(dude.direction) * (dude.speed * dude.scale.y);
+      dude.y += Math.cos(dude.direction) * (dude.speed * dude.scale.y);
+    }
+
+    // Increment the ticker
+    tick += 0.1;
+  });
+};
+
+//
 
 const IMAGE_NAMES = [
   "adelaide-01-mask.png",
@@ -813,131 +897,131 @@ function setup(loader, resources) {
   // createSprites(spriteSheet);
 }
 
-export const initSketch = async (mountEl) => {
-  // Create a PixiJS application.
-  const app = new Application();
+// export const initSketch = async (mountEl) => {
+//   // Create a PixiJS application.
+//   const app = new Application();
 
-  // Intialize the application.
-  await app.init({ background: "#1099bb", resizeTo: window });
+//   // Intialize the application.
+//   await app.init({ background: "#1099bb", resizeTo: window });
 
-  mountEl.appendChild(app.canvas);
+//   mountEl.appendChild(app.canvas);
 
-  const sheet = await Assets.load("./composite-large.png");
+//   const sheet = await Assets.load("./composite-large.png");
 
-  console.log(sheet);
-  const textures = [];
+//   console.log(sheet);
+//   const textures = [];
 
-  for (let i = 0; i < COLS * ROWS; i++) {
-    const x = IMAGE_SIZE * (i % COLS);
-    const y = IMAGE_SIZE * Math.floor(i / COLS);
-    const rectangle = new Rectangle(x, y, IMAGE_SIZE, IMAGE_SIZE);
-    const texture = new Texture({
-      source: sheet.baseTexture,
-      frame: rectangle,
-    });
-    textures.push({ texture });
-  }
+//   for (let i = 0; i < COLS * ROWS; i++) {
+//     const x = IMAGE_SIZE * (i % COLS);
+//     const y = IMAGE_SIZE * Math.floor(i / COLS);
+//     const rectangle = new Rectangle(x, y, IMAGE_SIZE, IMAGE_SIZE);
+//     const texture = new Texture({
+//       source: sheet.baseTexture,
+//       frame: rectangle,
+//     });
+//     textures.push({ texture });
+//   }
 
-  console.log(textures);
+//   console.log(textures);
 
-  //   const frames = {};
-  //   IMAGE_NAMES.forEach((name, i) => {
-  //     frames[`mask-${i}`] = {
-  //       x: IMAGE_SIZE * (i % COLS),
-  //       y: IMAGE_SIZE * Math.floor(i / COLS),
-  //       width: 544,
-  //       height: 544,
-  //     };
-  //   });
+//   //   const frames = {};
+//   //   IMAGE_NAMES.forEach((name, i) => {
+//   //     frames[`mask-${i}`] = {
+//   //       x: IMAGE_SIZE * (i % COLS),
+//   //       y: IMAGE_SIZE * Math.floor(i / COLS),
+//   //       width: 544,
+//   //       height: 544,
+//   //     };
+//   //   });
 
-  //   const atlasData = {
-  //     frames,
-  //     meta: {
-  //       image: "./composite-large.png",
-  //       format: "RGBA8888",
-  //       size: { w: 15776, h: 15776 },
-  //       scale: 1,
-  //     },
-  //   };
+//   //   const atlasData = {
+//   //     frames,
+//   //     meta: {
+//   //       image: "./composite-large.png",
+//   //       format: "RGBA8888",
+//   //       size: { w: 15776, h: 15776 },
+//   //       scale: 1,
+//   //     },
+//   //   };
 
-  //   const spritesheet = new Spritesheet(
-  //     Texture.from(atlasData.meta.image),
-  //     atlasData
-  //   );
+//   //   const spritesheet = new Spritesheet(
+//   //     Texture.from(atlasData.meta.image),
+//   //     atlasData
+//   //   );
 
-  //   await spritesheet.parse();
+//   //   await spritesheet.parse();
 
-  //   console.log(spritesheet);
+//   //   console.log(spritesheet);
 
-  //   const textures = [];
-  //   for (let i = 0; i < IMAGE_NAMES.length; i++) {
-  //     textures.push(await Assets.load(`./output/${IMAGE_NAMES[i]}`));
-  //   }
+//   //   const textures = [];
+//   //   for (let i = 0; i < IMAGE_NAMES.length; i++) {
+//   //     textures.push(await Assets.load(`./output/${IMAGE_NAMES[i]}`));
+//   //   }
 
-  const sprites = new Container();
+//   const sprites = new Container();
 
-  app.stage.addChild(sprites);
+//   app.stage.addChild(sprites);
 
-  // Create an array to store all the sprites
-  const maggots = [];
+//   // Create an array to store all the sprites
+//   const maggots = [];
 
-  const totalSprites = textures.length;
+//   const totalSprites = textures.length;
 
-  for (let i = 0; i < totalSprites; i++) {
-    // Create a new maggot Sprite
-    const dude = new Sprite(textures[i]);
+//   for (let i = 0; i < totalSprites; i++) {
+//     // Create a new maggot Sprite
+//     const dude = new Sprite(textures[i]);
 
-    // Set the anchor point so the texture is centerd on the sprite
-    dude.anchor.set(0.5);
+//     // Set the anchor point so the texture is centerd on the sprite
+//     dude.anchor.set(0.5);
 
-    // Different maggots, different sizes
-    dude.scale.set(0.3);
+//     // Different maggots, different sizes
+//     dude.scale.set(0.3);
 
-    // Scatter them all
-    dude.x = Math.random() * app.screen.width;
-    dude.y = Math.random() * app.screen.height;
+//     // Scatter them all
+//     dude.x = Math.random() * app.screen.width;
+//     dude.y = Math.random() * app.screen.height;
 
-    dude.tint = Math.random() * 0x808080;
+//     dude.tint = Math.random() * 0x808080;
 
-    // Create a random direction in radians
-    dude.direction = Math.random() * Math.PI * 2;
+//     // Create a random direction in radians
+//     dude.direction = Math.random() * Math.PI * 2;
 
-    // This number will be used to modify the direction of the sprite over time
-    dude.turningSpeed = Math.random() - 0.8;
+//     // This number will be used to modify the direction of the sprite over time
+//     dude.turningSpeed = Math.random() - 0.8;
 
-    // Create a random speed between 0 - 2, and these maggots are slooww
-    dude.speed = (2 + Math.random() * 2) * 0.2;
+//     // Create a random speed between 0 - 2, and these maggots are slooww
+//     dude.speed = (2 + Math.random() * 2) * 0.2;
 
-    dude.offset = Math.random() * 100;
+//     dude.offset = Math.random() * 100;
 
-    // Finally we push the dude into the maggots array so it it can be easily accessed later
-    maggots.push(dude);
+//     // Finally we push the dude into the maggots array so it it can be easily accessed later
+//     maggots.push(dude);
 
-    sprites.addChild(dude);
-  }
+//     sprites.addChild(dude);
+//   }
 
-  // Create a bounding box box for the little maggots
-  const dudeBoundsPadding = 100;
-  const dudeBounds = new Rectangle(
-    -dudeBoundsPadding,
-    -dudeBoundsPadding,
-    app.screen.width + dudeBoundsPadding * 2,
-    app.screen.height + dudeBoundsPadding * 2
-  );
+//   // Create a bounding box box for the little maggots
+//   const dudeBoundsPadding = 100;
+//   const dudeBounds = new Rectangle(
+//     -dudeBoundsPadding,
+//     -dudeBoundsPadding,
+//     app.screen.width + dudeBoundsPadding * 2,
+//     app.screen.height + dudeBoundsPadding * 2
+//   );
 
-  let tick = 0;
+//   let tick = 0;
 
-  app.ticker.add(() => {
-    // Iterate through the sprites and update their position
-    for (let i = 0; i < maggots.length; i++) {
-      const dude = maggots[i];
+//   app.ticker.add(() => {
+//     // Iterate through the sprites and update their position
+//     for (let i = 0; i < maggots.length; i++) {
+//       const dude = maggots[i];
 
-      dude.direction += dude.turningSpeed * 0.01;
-      dude.x += Math.sin(dude.direction) * (dude.speed * dude.scale.y);
-      dude.y += Math.cos(dude.direction) * (dude.speed * dude.scale.y);
-    }
+//       dude.direction += dude.turningSpeed * 0.01;
+//       dude.x += Math.sin(dude.direction) * (dude.speed * dude.scale.y);
+//       dude.y += Math.cos(dude.direction) * (dude.speed * dude.scale.y);
+//     }
 
-    // Increment the ticker
-    tick += 0.1;
-  });
-};
+//     // Increment the ticker
+//     tick += 0.1;
+//   });
+// };
